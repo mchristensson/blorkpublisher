@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F705F2C22923B1310069160D /* Extension+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705F2C12923B1310069160D /* Extension+Logger.swift */; };
+		F705F2C72923B1750069160D /* Blork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705F2C62923B1750069160D /* Blork.swift */; };
+		F705F2C92923B1B80069160D /* BlorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705F2C82923B1B80069160D /* BlorkItem.swift */; };
+		F705F2CB2923B1F00069160D /* BlorkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705F2CA2923B1F00069160D /* BlorkStore.swift */; };
+		F705F2CF2923B2310069160D /* QueueHandlerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F705F2CE2923B2310069160D /* QueueHandlerViewModel.swift */; };
 		F76B2F4C2923978600F974CC /* QueueManagerLab1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B2F4B2923978600F974CC /* QueueManagerLab1App.swift */; };
 		F76B2F4E2923978600F974CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B2F4D2923978600F974CC /* ContentView.swift */; };
 		F76B2F502923978700F974CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76B2F4F2923978700F974CC /* Assets.xcassets */; };
 		F76B2F532923978700F974CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76B2F522923978700F974CC /* Preview Assets.xcassets */; };
+		F76B2F5B292397E300F974CC /* QueueHandlerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B2F5A292397E300F974CC /* QueueHandlerView.swift */; };
+		F76B2F5D29239C3600F974CC /* BlorkStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B2F5C29239C3600F974CC /* BlorkStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F705F2C12923B1310069160D /* Extension+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Logger.swift"; sourceTree = "<group>"; };
+		F705F2C62923B1750069160D /* Blork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blork.swift; sourceTree = "<group>"; };
+		F705F2C82923B1B80069160D /* BlorkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlorkItem.swift; sourceTree = "<group>"; };
+		F705F2CA2923B1F00069160D /* BlorkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlorkStore.swift; sourceTree = "<group>"; };
+		F705F2CE2923B2310069160D /* QueueHandlerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueHandlerViewModel.swift; sourceTree = "<group>"; };
 		F76B2F482923978600F974CC /* QueueManagerLab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QueueManagerLab1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76B2F4B2923978600F974CC /* QueueManagerLab1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManagerLab1App.swift; sourceTree = "<group>"; };
 		F76B2F4D2923978600F974CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F76B2F4F2923978700F974CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76B2F522923978700F974CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F76B2F542923978700F974CC /* QueueManagerLab1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QueueManagerLab1.entitlements; sourceTree = "<group>"; };
+		F76B2F5A292397E300F974CC /* QueueHandlerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueHandlerView.swift; sourceTree = "<group>"; };
+		F76B2F5C29239C3600F974CC /* BlorkStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlorkStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F705F2C32923B1460069160D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F705F2C12923B1310069160D /* Extension+Logger.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F705F2C42923B1550069160D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				F76B2F5C29239C3600F974CC /* BlorkStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		F705F2C52923B1610069160D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F705F2C62923B1750069160D /* Blork.swift */,
+				F705F2C82923B1B80069160D /* BlorkItem.swift */,
+				F705F2CA2923B1F00069160D /* BlorkStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F705F2CD2923B2210069160D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F705F2CE2923B2310069160D /* QueueHandlerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F76B2F3F2923978600F974CC = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +100,16 @@
 		F76B2F4A2923978600F974CC /* QueueManagerLab1 */ = {
 			isa = PBXGroup;
 			children = (
+				F705F2CD2923B2210069160D /* ViewModel */,
+				F705F2C52923B1610069160D /* Model */,
+				F705F2C42923B1550069160D /* Storage */,
+				F705F2C32923B1460069160D /* Extension */,
 				F76B2F4B2923978600F974CC /* QueueManagerLab1App.swift */,
 				F76B2F4D2923978600F974CC /* ContentView.swift */,
 				F76B2F4F2923978700F974CC /* Assets.xcassets */,
 				F76B2F542923978700F974CC /* QueueManagerLab1.entitlements */,
 				F76B2F512923978700F974CC /* Preview Content */,
+				F76B2F5A292397E300F974CC /* QueueHandlerView.swift */,
 			);
 			path = QueueManagerLab1;
 			sourceTree = "<group>";
@@ -139,8 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76B2F5D29239C3600F974CC /* BlorkStorage.swift in Sources */,
+				F705F2CF2923B2310069160D /* QueueHandlerViewModel.swift in Sources */,
+				F705F2C92923B1B80069160D /* BlorkItem.swift in Sources */,
+				F705F2CB2923B1F00069160D /* BlorkStore.swift in Sources */,
+				F76B2F5B292397E300F974CC /* QueueHandlerView.swift in Sources */,
 				F76B2F4E2923978600F974CC /* ContentView.swift in Sources */,
 				F76B2F4C2923978600F974CC /* QueueManagerLab1App.swift in Sources */,
+				F705F2C72923B1750069160D /* Blork.swift in Sources */,
+				F705F2C22923B1310069160D /* Extension+Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

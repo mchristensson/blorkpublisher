@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var vm = QueueHandlerViewModel(BlorkStorage.shared)
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        QueueHandlerView(vm: vm)
+
     }
 }
 
@@ -19,3 +23,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
